@@ -1,0 +1,35 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "Server to host my apis",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "./node_modules/.bin/eslint src/*",
+    "lint:fix": "./node_modules/.bin/eslint src/* --fix",
+    "deploy": "now",
+    "deploy:prod": "now --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaferr1s/api-server.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Joshua Ferris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuaferr1s/api-server/issues"
+  },
+  "homepage": "https://github.com/joshuaferr1s/api-server#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
