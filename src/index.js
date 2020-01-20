@@ -1,8 +1,12 @@
 const express = require('express');
 require('dotenv').config();
 
+const weather = require('./routes/weather');
+
 const app = express();
 const port = process.env.PORT || 3000;
+
+app.use('/weather', weather);
 
 app.get('/', (req, res) => {
   res.json({

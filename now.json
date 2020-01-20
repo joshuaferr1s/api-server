@@ -7,6 +7,9 @@
       "use": "@now/node-server"
     }
   ],
+  "env": {
+    "DARK_SKY_API_KEY": "@darkskyapikey"
+  },
   "routes": [
     {
       "src": "/.*",
