@@ -3,12 +3,14 @@ require('dotenv').config();
 
 const weather = require('./routes/weather');
 const flag = require('./routes/flag');
+const dad = require('./routes/dad');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use('/weather', weather);
 app.use('/flag', flag);
+app.use('/dad', dad);
 
 app.get('/', (req, res) => {
   res.json({
