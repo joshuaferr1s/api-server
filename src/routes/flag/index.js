@@ -30,6 +30,7 @@ router.get('/', async (req, res, next) => {
     const flags = await getFlagStatusList();
     const todayFlagStatus = await checkFlagStatusToday(flags);
     res.json({
+      status: 200,
       position: todayFlagStatus ? 'half' : 'full',
       presidentialAction: todayFlagStatus,
     });
