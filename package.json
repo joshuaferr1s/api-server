@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/joshuaferr1s/api-server#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "nodemon": "^2.0.2"
   },

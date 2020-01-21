@@ -9,8 +9,9 @@ module.exports = {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    'parser': 'babel-eslint',
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 6
     },
     "rules": {
         "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
