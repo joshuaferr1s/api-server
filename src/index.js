@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config();
 
 const weather = require('./routes/weather');
@@ -7,6 +8,8 @@ const dad = require('./routes/dad');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+app.use(cors());
 
 app.use('/weather', weather);
 app.use('/flag', flag);
