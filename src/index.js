@@ -5,6 +5,7 @@ require('dotenv').config();
 const weather = require('./routes/weather');
 const flag = require('./routes/flag');
 const dad = require('./routes/dad');
+const coronavirus = require('./routes/coronavirus');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -14,6 +15,7 @@ app.use(cors());
 app.use('/weather', weather);
 app.use('/flag', flag);
 app.use('/dad', dad);
+app.use('/coronavirus', coronavirus);
 
 app.get('/', (req, res) => {
   res.json({
