@@ -7,17 +7,20 @@ const weather = require('./routes/weather');
 const flag = require('./routes/flag');
 const dad = require('./routes/dad');
 const coronavirus = require('./routes/coronavirus');
+const hdDonations = require('./routes/hdDonations');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(helmet());
+app.use(express.json());
 
 app.use('/weather', weather);
 app.use('/flag', flag);
 app.use('/dad', dad);
 app.use('/coronavirus', coronavirus);
+app.use('/hdDonations', hdDonations);
 
 app.get('/', (req, res) => {
   res.json({

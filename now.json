@@ -8,7 +8,8 @@
     }
   ],
   "env": {
-    "DARK_SKY_API_KEY": "@darkskyapikey"
+    "DARK_SKY_API_KEY": "@darkskyapikey",
+    "STRIPE_KEY": "@hd-stripe"
   },
   "routes": [
     {
